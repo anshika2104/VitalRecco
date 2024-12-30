@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    font-family: Arial, sans-serif;
 }
 
 /* Body and HTML */
@@ -71,7 +71,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: whitesmoke;
             background-image: url(static/background.jpg);
             background-size: 100% 100%;
 
@@ -99,7 +99,7 @@ header {
         .hero-content h1 {
             font-size: 3em;
             font-weight: bold;
-            color: #fff;
+            color:whitesmoke;
             margin-bottom: 15px;
         }
 
@@ -153,7 +153,6 @@ footer {
 .card-body {
     flex: 1;
 }
-
 .card-background {
     background-color: #ffffff;
     padding: 20px;
@@ -170,6 +169,7 @@ footer {
     padding: 20px; /* Optional: adjust padding for readability */
 }
 
+
  </style>
 </head>
 <body>
@@ -184,7 +184,7 @@ footer {
     <div class="carousel-inner">
         <!-- First Slide -->
         <div class="carousel-item active">
-            <div class="hero-section" style="background-image: url('static/slide1.jpg');">
+            <div class="hero-section" style="background-image: url('static/background.jpg');">
                 <div class="overlay"></div>
                 <div class="hero-content">
                     <h1>Welcome to Serenity Hospital</h1>
@@ -195,7 +195,7 @@ footer {
         </div>
         <!-- Second Slide -->
         <div class="carousel-item">
-            <div class="hero-section" style="background-image: url('static/slide2.jpg');">
+            <div class="hero-section" style="background-image: url('static/background1.jpg');">
                 <div class="overlay"></div>
                 <div class="hero-content">
                     <h1>Welcome to Serenity Hospital</h1>
@@ -206,7 +206,7 @@ footer {
         </div>
         <!-- Third Slide -->
         <div class="carousel-item">
-            <div class="hero-section" style="background-image: url('static/slide3.jpg');">
+            <div class="hero-section" style="background-image: url('static/background2.jpg');">
                 <div class="overlay"></div>
                 <div class="hero-content">
                     <h1>Welcome to Serenity Hospital</h1>
@@ -227,15 +227,17 @@ footer {
     </button>
 </div>
 
-        <!-- About Section -->
-    <section id="History"  class="card-background">
-        <h2>History</h2>
-        <p>At Serenity Hospital, we prioritize quality healthcare and patient satisfaction...
-            Founded in 1985, Serenity Hospital began as a small community clinic with a vision to provide accessible, compassionate, and high-quality healthcare to the local population. Dr. Eleanor Jacobs, a renowned physician with a passion for patient care, established Serenity with the goal of offering medical services that not only addressed physical ailments but also supported the emotional well-being of each patient. Over the years, the hospital gained a reputation for its warm environment and innovative treatment methods, quickly becoming a trusted name in healthcare.
+         <!-- About Section -->
+         <section id="History"  class="card-background">
+            <h2>History</h2>
+            <p>At Serenity Hospital, we prioritize quality healthcare and patient satisfaction...
+                Founded in 1985, Serenity Hospital began as a small community clinic with a vision to provide accessible, compassionate, and high-quality healthcare to the local population. Dr. Eleanor Jacobs, a renowned physician with a passion for patient care, established Serenity with the goal of offering medical services that not only addressed physical ailments but also supported the emotional well-being of each patient. Over the years, the hospital gained a reputation for its warm environment and innovative treatment methods, quickly becoming a trusted name in healthcare.
+    
+    In the early 2000s, Serenity Hospital expanded its facilities to include a state-of-the-art emergency department, as well as specialized departments in cardiology, neurology, and orthopedics. This expansion was driven by the growing need for specialized care in the region, and Serenity responded by bringing in top medical professionals from across the country. The hospital also began embracing advanced medical technology, including robotic surgery systems and digital imaging, allowing for more precise diagnoses and treatments.
+            </p>
+        </section>
 
-In the early 2000s, Serenity Hospital expanded its facilities to include a state-of-the-art emergency department, as well as specialized departments in cardiology, neurology, and orthopedics. This expansion was driven by the growing need for specialized care in the region, and Serenity responded by bringing in top medical professionals from across the country. The hospital also began embracing advanced medical technology, including robotic surgery systems and digital imaging, allowing for more precise diagnoses and treatments.
-        </p>
-    </section>
+   
 
     <!-- Services Section with Bootstrap Cards -->
     <section id="services" class="bg-light">
@@ -245,7 +247,7 @@ In the early 2000s, Serenity Hospital expanded its facilities to include a state
                 <!-- Card 1 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card shadow-sm">
-                        <img src="static/emergency1.jpg" class="card-img-top" alt="Emergency Services">
+                        <img src="static/emergency.jpg" class="card-img-top" alt="Emergency Services">
                         <div class="card-body">
                             <h5 class="card-title">Emergency Services</h5>
                             <p class="card-text">Providing 24/7 emergency care with dedicated staff and advanced facilities.
@@ -270,7 +272,7 @@ In the early 2000s, Serenity Hospital expanded its facilities to include a state
                 <!-- Card 3 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card shadow-sm">
-                        <img src="static/op.jpg" class="card-img-top" alt="Orthopedics">
+                        <img src="static/orthopedic.jpg" class="card-img-top" alt="orthopedics">
                         <div class="card-body">
                             <h5 class="card-title">Orthopedics</h5>
                             <p class="card-text">Advanced orthopedic services for bone, joint, and muscle health.
@@ -283,7 +285,7 @@ In the early 2000s, Serenity Hospital expanded its facilities to include a state
                 <!-- Card 4 -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card shadow-sm">
-                        <img src="static/neuro.jpg" class="card-img-top" alt="Neurology">
+                        <img src="static/neurology.jpg" class="card-img-top" alt="Neurology">
 
                         <div class="card-body">
                             <h5 class="card-title">Neurology</h5>
@@ -296,7 +298,6 @@ In the early 2000s, Serenity Hospital expanded its facilities to include a state
             </div>
         </div>
     </section>
-
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
