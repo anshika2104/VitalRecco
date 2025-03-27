@@ -57,7 +57,7 @@ def get_predicted_value(patient_symptoms):
 #creating rotes
 @app.route('/')
 def home():
-    return render_template('home1.html')
+    return render_template('Home.html')
 @app.route('/recommend')
 def index():
     return render_template('index.html')
